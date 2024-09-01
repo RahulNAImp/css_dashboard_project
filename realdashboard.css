@@ -1,0 +1,337 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 20px;
+    padding: 30px;
+    background-color:rgba(245, 245, 220, 0.233);
+}
+
+ .left {
+    background-color: black;
+    height: 100vh;
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: sticky;
+    top: 20px;
+    border-radius: 30px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.profile img {
+    width: 120px;
+    height: 150px;
+    border-radius: 100px;
+} 
+.profile figcaption {
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 200px;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+    color: aliceblue;
+    margin-left: -130px;
+    margin-bottom: 20px;
+}
+.navigation:hover{
+    color:wheat;
+}
+.navigation a {
+    padding-left: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.navigation a:hover {
+    color: burlywood;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;         
+    /* just for understanding i have given row or else bydefault it is row only */
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 35px;
+}
+header input {
+    margin-right: 5%;
+    width: 200px;
+    height: 30px;
+    border-radius: 12px;
+    border: 0px solid white;
+    background-color:bisque;
+    margin-top: 25px;
+    border-color: aquamarine;
+}
+header input:focus{
+    outline: none;
+    border: 2px solid greenyellow;
+}
+
+#board {
+    width: 92%;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid orange;
+    margin-left: 4%;
+}
+#board #content1 {
+    padding-left: 40px;
+}
+#content2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#data h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+.dabba {
+    display: flex;
+    /* justify content used for evenly space the items*/
+    justify-content: space-between;
+    gap: 20px;
+    /* flex wrap is used so that when the window is resized than the divs should rearrange itself */
+    flex-wrap: wrap;
+}
+
+.boxes {
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+}
+.box1 {
+    background-color: rgba(127, 255, 212, 0.247);
+}
+.box1:hover {
+    background-color: rgba(127, 255, 212, 0.6);
+}
+.box2 {
+    background-color:rgba(210, 105, 30, 0.089);
+}
+.box2:hover{
+    background-color:rgba(210, 105, 30, 0.322);
+}
+.box3 {
+    background-color: rgba(165, 42, 42, 0.08);
+}
+.box3:hover{
+    background-color:rgba(165, 42, 42, 0.308);
+}
+.box4 {
+    background-color: rgba(128, 0, 128, 0.11);
+}
+.box4:hover {
+    background-color: rgba(128, 0, 128, 0.285);
+}
+.material-symbols-outlined {
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.cont {
+    margin-left: 12px;
+    margin-top: 0;
+}
+.value {
+    margin-top: -10px;
+    margin-left: 12px;
+}
+#users h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    border-radius: 25px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.461);
+}
+table .head1 {
+    background-color: rgba(165, 42, 42, 0.42);
+    font-weight: 700;
+}
+table td {
+    padding: 15px 100px;
+    text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9f9;
+}
+table tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+/* schedule */
+#schedule {
+    border: 0px solid green;
+    background-color: white;
+    margin-top: 80px;
+    overflow-y: scroll;
+    max-height: 400px;
+    border-radius: 30px;
+    border: 1px solid orange;
+}
+
+.schedule-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.schedule-head h2 {
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.schedule-head p {
+    margin-right: 23px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.meets {
+    margin-top: 0;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.head {
+    font-size: 20px;
+    font-weight: 680;
+}
+
+.details {
+    font-size: 16px;
+    font-weight: 500;
+    color: #999999;
+}
+
+.schedule-details div:nth-child(even) {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-left: 3px solid greenyellow;
+}
+.schedule-details div:nth-child(odd) {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-left: 3px solid rgba(255, 0, 0, 0.352);
+}
+
+#embeded {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    justify-items: center;
+}
+#contact h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+h2::first-letter{
+    height: 100px;
+}
+iframe {
+    /* border-radius: 40px; */
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    border: 1px solid orange;
+}
+#form1 {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid orange;
+}
+
+.input-field {
+    width: 300px;
+    height: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.461);
+}
+.textarea {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.461);
+}
+#form1 #sub {
+    margin-top: -15px;
+}
+#form1 #sub:hover {
+    background-color: rgba(172, 255, 47, 0.427);
+}
+
+footer {
+    background-color: black;
+    height: 60px;
+}
+footer p {
+    color: #eaeaea;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+/* Apply to all h2 elements */
+h2::first-letter {
+    font-size: 200%; /* Adjust this value to make the first letter bigger */
+    font-weight: bold; /* Make it bold */
+    line-height: 1; /* Ensure proper vertical alignment */
+}
+
+/* If you want the effect for other headings (h1, h3, etc.), you can add similar rules */
+h1::first-letter,
+h3::first-letter,
+h4::first-letter,
+h5::first-letter,
+h6::first-letter {
+    font-size: 200%; /* Adjust this value as needed */
+    font-weight: bold;
+    line-height: 1;
+}
+
+h2,h1:hover{
+    text-decoration-color: gold;
+    font-size: 32px;
+    transition: 1s;
+}
